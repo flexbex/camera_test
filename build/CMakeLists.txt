@@ -1,0 +1,15 @@
+#####################################
+cmake_minimum_required (VERSION 2.8) 
+project (raspicam_test)
+SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} /usr/local/lib/cmake/)
+set(CMAKE_CXX_FLAGS "-mfp16-format=ieee")
+find_package(raspicam REQUIRED)
+find_package(OpenCV)
+MESSAGE(STATUS "COMPILING OPENCV TESTS")
+add_executable (test_cv simpletest_raspicam_cv.cpp)  
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Wall -O2")
+target_link_libraries(test_cv ${OpenCV_LIBS})
+target_link_libraries(test_cv ${raspicam_CV_LIBS})
+target_link_libraries(test_cv ${raspicam_LIBS})
+target_link_libraries (test_cv ${raspicam_CV_LIBS})
+#####################################
