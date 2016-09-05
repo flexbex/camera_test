@@ -1,3 +1,0 @@
-/home/pi/workspace/opencv/camera/src/build/CMakeFiles/edit_cache.dir
-/home/pi/workspace/opencv/camera/src/build/CMakeFiles/rebuild_cache.dir
-/home/pi/workspace/opencv/camera/src/build/CMakeFiles/test_cv.dir

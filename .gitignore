@@ -1,4 +1,5 @@
-~/camera_test/build/CMakeFiles
-~/camera_test/build/CMake*
-~/camera_test/build/cmake*
-~/camera_test/build/Makefile
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeLists.txt
+Makefile
